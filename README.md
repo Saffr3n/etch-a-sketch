@@ -1,1 +1,2 @@
-# etch-a-sketch
+# Etch-a-Sketch
+Practicing HTML, CSS, JS and Git.
