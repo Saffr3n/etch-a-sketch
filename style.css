@@ -3,39 +3,26 @@ body {
     height: 100vh;
     margin: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .container {
-    width: 100vw;
-    height: 100vw;
+    width: 90vw;
+    height: 90vw;
     display: grid;
-    grid-template-columns: repeat(16, calc(90% / 16));
     justify-content: center;
     align-content: center;
 }
 
 @media (orientation: landscape) {
     .container {
-        width: 100vh;
-        height: 100vh;
+        width: 90vh;
+        height: 90vh;
     }
 }
 
 .item {
     padding-bottom: 100%;
-    box-shadow: 1px 1px black inset;
-}
-
-.container > :nth-child(16n) {
-    box-shadow: 1px 1px black inset, -1px 0 black inset;
-}
-
-.container > :nth-child(1n+241) {
-    box-shadow: 1px 1px black inset, 0 -1px black inset;
-}
-
-.container > :last-child {
-    box-shadow: 1px 1px black inset, -1px -1px black inset;
 }
